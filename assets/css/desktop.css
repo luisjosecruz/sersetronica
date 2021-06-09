@@ -1,0 +1,121 @@
+header{
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 70vh;
+}
+
+header img{
+    margin: 60px;
+}
+
+.header__title-container{
+    margin: 0 auto;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header__title-container h1{
+    font-size: 5rem;
+    line-height: 5.2rem;
+}
+
+.header__title-container p{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+.header__title-container .header__button{
+    top: 0;
+    left: auto;
+    right: 0;
+    margin: 49px;
+}
+
+.main-exchange-container{
+    display: flex;
+    position: relative;
+}
+
+.main-exchange-container .background-img{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 300px;
+    height: 300px;
+}
+
+.main-exchange-container__title{
+    width: 50%;
+    padding: 0 0 0 100px;
+    text-align: left;
+}
+
+.main-exchange-container__title h2{
+    font-size: 3rem;
+    line-height: 3.2rem;
+}
+
+.main-exchange-container__title p{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+.main-tables-container{
+    width: 50%;
+    flex-direction: column;
+}
+
+.main-product-detail{
+    padding: 50px 10px;
+    padding-bottom: 100px;
+}
+
+.product-detail__title{
+    margin-bottom: 50px;
+}
+
+.plans-container__slider{
+    height: 400px;
+}
+
+.plans-container__card{
+    height: 300px;
+}
+
+.plan-card__cta{
+    position: absolute;
+    left: calc(50% - 70px);
+    bottom: 40px;
+}
+
+.plan-card__price{
+    padding: 10px 0;
+}
+
+.plans-container__card{
+    margin: 50px 20px 0;
+}
+
+.plans__title h2{
+    padding-top: 100px;
+}
+
+.main-plans-container{
+    padding-bottom: 100px;
+}
+
+footer section img{
+    width: 100px;
+}
+
+footer .left ul{
+    display: flex;
+    justify-content: center;
+}
+
+footer .left ul li a{
+    padding: 0 20px;
+}
