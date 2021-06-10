@@ -63,9 +63,27 @@ header img{
     line-height: 1.8rem;
 }
 
-.main-tables-container{
+.main-about-container{
     width: 50%;
     flex-direction: column;
+}
+
+.currency-about-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.currency-about-container img{
+    width: 30%;
+    display: block;
+    margin-left: 50px;
+    border-radius: 100px;
+}
+
+.currency-about-container p{
+    text-align: left;
 }
 
 .main-product-detail{

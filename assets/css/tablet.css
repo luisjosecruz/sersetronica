@@ -5,10 +5,6 @@
     margin: 0 auto;
 }
 
-.table-go-right, .table-go-left{
-    display: none;
-}
-
 .plans-container__slider{
     justify-content: center;
 }
