@@ -519,13 +519,3 @@ footer .right p{
     font-weight: bold;
     color: var(--just-white);
 }
-
-.circle{
-    position: absolute;
-    width: 700px;
-    height: 700px;
-    background: rgba(0,0,0,0.16);
-    border-radius: 100%;
-    left: -150px;
-    top: 100%;
-}
