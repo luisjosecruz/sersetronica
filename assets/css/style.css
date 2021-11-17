@@ -153,10 +153,9 @@ main{
 }
 
 .main-exchange-container p{
-    margin-bottom: 50px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
     color: #757575;
 }
 
@@ -174,19 +173,18 @@ main{
 .main-currency-about{
     width: auto;
     scroll-snap-align: start;
-    min-width: 320px;
+    min-width: 270px;
     max-width: 500px;
-    height: 300px;
+    height: 350px;
     margin: 0 auto;
 }
 
 .main-currency-about .currency-about__title{
     width: 70%;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
+    margin: 20px auto;
+    font-size: 2rem;
     font-weight: bold;
-    line-height: 2.3rem;
+    line-height: 2.4rem;
     color: var(--primary-blue);
     text-align: center;
 }
@@ -195,14 +193,16 @@ main{
     width: 70%;
     min-width: 230px;
     max-width: 500px;
+    min-height: 220px;
     max-height: 300px;
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
     position: relative;
-    background: #e1e5ea;
+    background: var(--just-white);
     padding: 20px;
+    border: 1px solid var(--soft-blue);
     border-radius: 5px;
-    box-shadow: 0 5px 6px rgba(0,0,0,0.16);
+    box-shadow: -1px 5px 6px rgba(0,0,0,0.16);
 }
 
 .currency-about-container img{
@@ -211,6 +211,14 @@ main{
 
 .currency-about-container p{
     text-align: center;
+}
+
+.currency-about-container p span{
+    display: block;
+}
+
+.currency-about-container-values{
+    padding: 5px 0;
 }
 
 .main-product-detail{
@@ -273,13 +281,15 @@ main{
     display: inline-block;
     width: 20px;
     height: 20px;
-    margin-bottom: 10px;
+    margin-right: 10px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .product__card-title{
+    display: flex;
+    align-items: center;
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
@@ -295,7 +305,7 @@ main{
 }
 
 .product__icon.clock{
-    background: url('../icons/clock.svg');
+    background: url('../images/camera.svg');
 }
 
 .product__icon.eye{
@@ -311,6 +321,9 @@ main{
 }
 
 .bitcoin-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     min-width: 320px;
     height: 50vh;
@@ -321,11 +334,14 @@ main{
 }
 
 .bitcoin-img-container h2{
-    padding-top: 35px;
+    padding: 20px 25px;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--just-white);
+    background: var(--primary-blue);
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgb(0,0,0,.3);
 }
 
 .main-plans-container{
@@ -361,7 +377,7 @@ main{
 
 .plans-container__slider{
     display: flex;
-    height: 316px;
+    height: auto;
     overflow-y: hidden;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
@@ -379,8 +395,8 @@ main{
     width: 60%;
     min-width: 200px;
     max-width: 300px;
-    height: 250px;
-    margin: 50px 10px 0;
+    height: 75px;
+    margin: 50px 10px;
     padding: 0 15px;
     background: var(--just-white);
     border-radius: 15px;

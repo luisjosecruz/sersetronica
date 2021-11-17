@@ -10,7 +10,7 @@ header img{
 
 .header__title-container{
     margin: 0 auto;
-    height: 60%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,8 +18,8 @@ header img{
 }
 
 .header__title-container h1{
-    font-size: 5rem;
-    line-height: 5.2rem;
+    font-size: 7rem;
+    line-height: 7.2rem;
 }
 
 .header__title-container p{
@@ -66,6 +66,7 @@ header img{
 .main-about-container{
     width: 50%;
     flex-direction: column;
+    padding-bottom: 150px;
 }
 
 .currency-about-container{
@@ -84,6 +85,10 @@ header img{
 
 .currency-about-container p{
     text-align: left;
+}
+
+.main-currency-about{
+    height: 215px;
 }
 
 .main-product-detail{
