@@ -49,16 +49,16 @@ header{
     min-width: 320px;
     height: 324px;
     text-align: center;
-    background: linear-gradient(210deg, #0061a8 21%, #2978b5 100%); 
-
+    background: linear-gradient(to bottom, #0061a8 50%, #0093ff);
+    /* background: linear-gradient(210deg, #0061a8 21%, #2978b5 100%);  */
     /* background: rgba(0,0,0,0.5) url('../images/background-camera.jpg') no-repeat center;
     background-blend-mode: overlay;
     background-size: cover; */
 }
 
 header img{
-    width: 170px;
-    margin-top: 45px;
+    width: 190px;
+    margin-top: 30px;
 }
 
 .header__title-container{
@@ -202,7 +202,7 @@ main{
     padding: 20px;
     border: 1px solid var(--soft-blue);
     border-radius: 5px;
-    box-shadow: -1px 5px 6px rgba(0,0,0,0.16);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 16%);
 }
 
 .currency-about-container img{
@@ -305,19 +305,19 @@ main{
 }
 
 .product__icon.clock{
-    background: url('../images/camera.svg');
+    background: url('../icons/camera.svg');
 }
 
 .product__icon.eye{
-    background: url('../icons/eye.svg');
+    background: url('../icons/alarma.svg');
 }
 
 .product__icon.money{
-    background: url('../icons/dollar-sign.svg');
+    background: url('../icons/cerca.svg');
 }
 
 .product__icon.check{
-    background: url('../icons/check-circle.svg');
+    background: url('../icons/razor.svg');
 }
 
 .bitcoin-img-container{
@@ -334,40 +334,48 @@ main{
 }
 
 .bitcoin-img-container h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px 25px;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--just-white);
-    background: var(--primary-blue);
+    background: rgba(24, 82, 168, 0.7);
     border-radius: 5px;
-    box-shadow: 0 2px 3px rgb(0,0,0,.3);
+    box-shadow: 0 2px 3px rgb(0,0,0,.24);
 }
 
-.main-plans-container{
+.bitcoin-img-container h2 img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.main-contact-container{
     width: 100%;
     min-width: 320px;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
     text-align: center;
 }
 
-.plans__title{
+.contact__title{
     width: 90%;
     min-width: 288px;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
-.plans__title h2{
-    padding-top: 50px;
+.contact__title h2{
+    padding-top: 100px;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--black);
 }
 
-.plans__title p{
+.contact__title p{
     padding-top: 30px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -375,120 +383,53 @@ main{
     color: #757575;
 }
 
-.plans-container__slider{
+.conctact-media {
+    padding: 10px 100px;
+}
+
+.conctact-media ul {
     display: flex;
-    height: auto;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.plans-container__slider::-webkit-scrollbar{
-    display: none;
+.conctact-media ul li{
+    min-width: 290px;
+    padding: 10px;
+    list-style: none;
 }
 
-.plans-container__card{
-    position: relative;
-    scroll-snap-align: center;
-    width: 60%;
-    min-width: 200px;
-    max-width: 300px;
-    height: 75px;
-    margin: 50px 10px;
-    padding: 0 15px;
-    background: var(--just-white);
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
-}
-
-.plans-container__card:first-child{
-    margin-left: 20px;
-}
-
-.plans-container__card:last-child{
-    margin-right: 20px;
-}
-
-.recommended{
-    position: absolute;
-    width: 120px;
-    height: 31px;
-    padding: 8px;
-    top: -15px;
-    left: calc(50% - 60px);
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    background: var(--primary-blue);
-    border-radius: 8px;
+.conctact-media ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
     color: var(--just-white);
+    font-size: 1.6rem;
+    padding: 10px;
+    background: linear-gradient(20deg, var(--primary-blue) 50%, #79a3e2 90%);
+    border-radius: 2px;
 }
 
-.plan-card__title{
-    padding-top: 30px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: var(--black);
+.conctact-media ul li a img{
+    width: 30px;
+    margin-right: 15px;
 }
 
-.plan-card__price{
-    padding: 5px 0;
-    font-size: 5.2rem;
-    font-weight: bold;
-    color: var(--black);
-    letter-spacing: -4px;
-}
-
-.plan-card__price span{
-    position: relative;
-    width: 20px;
-    height: 20px;
-    top: 10px;
-    left: -10px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    vertical-align: text-top;
-}
-
-.plan-card__saving{
-    font-size: 1.2rem;
-    font-weight: 1.4rem;
-    color: #757575;
-}
-
-.plan-card__cta{
-    width: 150px;
-    height: 48px;
-    margin-top: 20px;
-    background: var(--off-white);
-    border: 2px solid var(--primary-blue);
-    border-radius: 4px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-    color: var(--black);
-}
-
-.plan-card__cta span{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: url('../icons/orange-right-arrow.svg') no-repeat center;
-    background-size: cover;
-    vertical-align: middle;
-}
 
 footer{
     display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 150px;
+    height: 300px;
     background: var(--primary-blue);
 }
 
 footer section{
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -503,6 +444,7 @@ footer .left ul{
 
 footer .left ul li{
     margin: 10px 0;
+    display: inline-block;
 }
 
 footer .left ul li a{
@@ -511,17 +453,18 @@ footer .left ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5px;
 }
 
 footer .left ul li a img{
-    width: 30px;
-    margin-right: 10px;
+    width: 40px;
 }
 
 footer .right{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px 0;
 }
 
 footer .right img{
@@ -534,4 +477,28 @@ footer .right p{
     line-height: 1.8rem;
     font-weight: bold;
     color: var(--just-white);
+}
+
+.copyright {
+    text-align: center;
+    color: var(--off-white);
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+
+.copyright span {
+    display: block;
+    font-size: 1.1rem;
+    padding: 20px 0 10px;
+}
+
+.copyright span a {
+    text-decoration: none;
+    color: var(--just-white);
+    font-weight: 500;
+    transition: all .2s;
+}
+
+.copyright span a:hover {
+    color: plum;
 }

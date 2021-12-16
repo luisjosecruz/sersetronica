@@ -8,3 +8,7 @@
 .plans-container__slider{
     justify-content: center;
 }
+
+.currency-about-container {
+    min-height: 150px;
+}
